@@ -1,0 +1,212 @@
+﻿@font-face {
+    font-family: 'permian';
+    src: url('../font/permiansanstypeface-webfont.eot');
+    src: url('../font/permiansanstypeface-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/permiansanstypeface-webfont.woff') format('woff'),
+         url('../font/permiansanstypeface-webfont.ttf') format('truetype'),
+         url('../font/permiansanstypeface-webfont.svg#permiansanstypefaceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+	width: 100%;
+	font-family: 'permian', 'Trebuchet MS', Tahoma, Arial, Gadget, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header
+{
+	margin: 30px auto 20px auto;
+	width: 990px;
+}
+
+a
+{
+	color: #AC3134;
+	text-decoration: none;
+}
+
+a.active
+{
+	color: black;
+}
+
+a.active:visited
+{
+	color: black;
+}
+
+a:visited
+{
+	color: #AC3134;
+}
+
+a:hover
+{
+	color: black;
+}
+
+p
+{
+	text-align: justify;
+}
+
+img.logo
+{
+	width: 314px;
+	height: 75px;
+	float: left;
+	margin: 0 0 30px 20px;
+}
+
+div.social
+{
+	float: right;
+	padding-top: 15px;
+	width: 110px;
+}
+
+img.afterparty
+{
+	margin: 1em 0;
+	width: 500px;
+	height: 332px;
+}
+
+nav
+{
+	margin-top: 1em;
+	height: 2.5em;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	clear: both;
+}
+
+nav ul
+{
+	text-align: justify;
+	margin: 0 20px;
+	padding: 0;
+}
+
+nav ul li
+{
+	display: inline-block;
+	font-size: 1.6em;
+	margin-right: 1.5em;
+	-webkit-text-shadow: 1px 1px #eee;
+	text-shadow: 1px 1px #eee;
+}
+
+nav ul li:last-child
+{
+	margin-right: 0;
+	float: right;
+}
+
+nav ul li:last-child a.register-button
+{
+	top: -2px;
+	position: relative;
+	-webkit-text-shadow: 0px 0px white;
+	text-shadow: 0px 0px white;
+	font-size: 80%;
+}
+
+a.register-button
+{
+	display: inline-block;
+	background: #AC3134;
+	color: white;
+	
+	padding: 0 .5em;
+}
+
+section
+{
+	margin: 1em auto;
+	width: 990px;
+}
+
+section > div:first-child
+{
+	width: 680px;
+	float: left;
+	overflow: hidden;
+	padding-left: 20px;
+}
+
+section div.slider
+{
+	width: 3550px;
+	position: relative;
+}
+
+section aside
+{
+	margin-left: 20px;
+	width: 270px;
+	float: left; 
+}
+
+section aside div.social
+{
+	width: 100%;
+	vertical-align: middle;
+	height: 50px;
+}
+
+article
+{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 20px 0 0;
+	width: 680px;
+}
+
+article ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+article ul li
+{
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+article p
+{
+	margin: 0 0 1em 0;
+}
+
+h2
+{
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid #ccc;
+}
+
+h3
+{
+	margin: 0 0 .3em 0;
+	clear: left;
+}
+
+h3 img
+{
+	float: left;
+	margin: 0 1em 1em 0;
+	border-radius: .5em;
+}
+
+a img
+{
+	border: none;
+}
