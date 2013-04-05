@@ -30,7 +30,7 @@ $(function () {
 		if (anchor.hasClass("register-button"))
 			return true;
 
-		animate(anchor);
+		return animate(anchor);
 	});
 
 	$(window).trigger("hashchange");
