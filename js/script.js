@@ -4,32 +4,25 @@ $(function () {
 	var $anchors = $("a", "ul");
 	var $scroller = $("div.slider");
 
-	var hash = window.location.hash;
-	if ($("article" + hash).length === 1) {
-		animate($("a[href='" + hash + "']", "ul"));
-	}
-
 	$(window).on("hashchange", function (e) {
-		return false;
+		var hash = window.location.hash;
+		if (hash.indexOf("#") === -1)
+			hash = "#about";
+
+		if ($("article#bla-" + hash.split("#")[1]).length === 1) {
+			animate($("a[href='" + hash + "']", "ul"));
+		}
 	});
 
-	function restore(hash) {
-		$("article[id='']").attr("id", hash.split("#")[1]);
-	}
-
 	function animate($anchor) {
+		if ($anchor.hasClass("active"))
+			return false;
+
 		$anchors.removeClass("active");
 		$anchor.addClass("active");
-		var hash = $anchor[0].hash;
-		$("article" + hash).attr("id", "");
 
 		var index = $anchors.index($anchor);
-
-		$scroller.animate({
-			left: -704 * index
-		}, 500, function () {
-			restore(hash);
-		});
+		$scroller.animate({	left: -700 * index }, 500);
 	}
 
 	$("nav").on("click", "ul li a", function() {
@@ -37,9 +30,8 @@ $(function () {
 		if (anchor.hasClass("register-button"))
 			return true;
 
-		if (anchor.hasClass("active"))
-			return false;
-
 		animate(anchor);
 	});
+
+	$(window).trigger("hashchange");
 });
