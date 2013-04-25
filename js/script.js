@@ -33,5 +33,10 @@ $(function () {
 		return animate(anchor);
 	});
 
+	$("article#bla-agenda").on("click", "table a", function () {
+		$(this).closest("tr").next().find("p").slideToggle(300);
+		return false;
+	});
+
 	$(window).trigger("hashchange");
 });

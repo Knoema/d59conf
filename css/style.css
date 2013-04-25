@@ -216,3 +216,60 @@ h4.red
 	margin-bottom: 0.3em;
 }
 
+table
+{
+	font-size: small;
+}
+
+table a
+{
+	cursor: pointer;
+	color: black;
+}
+
+table p
+{
+	display: none;
+	font-style: italic;
+	background: #eee;
+	padding: 0 .5em;
+}
+
+table tr td:first-child
+{
+	width: 100px;
+	text-align: left;
+	vertical-align: top;
+}
+
+table tr.first td
+{
+	padding-top: 1em;
+}
+
+span.tag
+{
+	border-radius: 2px;
+	color: white;
+	padding: 0 .5em;
+}
+
+span.people
+{
+	background-color: #e94e1b;
+}
+
+span.ui
+{
+	background-color: #009640;
+}
+
+span.tech
+{
+	background-color: #0f70b7;
+}
+
+span.enterprise
+{
+	background-color: #a2185b;
+}
