@@ -231,8 +231,9 @@ table p
 {
 	display: none;
 	font-style: italic;
-	background: #eee;
 	padding: 0 .5em;
+	font-size: 90%;
+	border-left: 2px solid #999;
 }
 
 table tr td:first-child
